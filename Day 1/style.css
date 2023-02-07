@@ -1,0 +1,32 @@
+* { box-sizing: border-box;}
+
+body{
+    margin: 0;
+}
+
+.parent {
+    background-color: #23424A;
+    padding: 50px;
+
+
+    /* width: 900px; don't use fixed widths */
+    margin: 0 auto;
+    width: 80%;
+}
+
+.child{
+    background-color: #38cfd9;
+
+    /* normally I wouldn't include a height, it's just to get us started */
+
+    /* height: 300px; never set a fixed height */
+
+    width: 80%;
+    
+    margin: 0 auto;  /* center things in the container */
+    
+    
+    
+    padding: 2em; /*use responsive units like EM an REM */
+
+}

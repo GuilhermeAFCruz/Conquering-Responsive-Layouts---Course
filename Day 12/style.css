@@ -1,0 +1,149 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+
+
+:root{
+    --ff-roboto: 'Roboto', sans-serif;
+    --ff-playfair: 'Playfair Display', serif;
+
+    --clr-light: #F3EED9;
+    --clr-dark: #222C2A;
+    --clr-accent: #824936;
+}
+
+/* Utility Classes */
+
+.flex{display: flex;}
+
+.container{
+    width: 85%;
+    max-width: 1128px;
+    margin: 0 auto;
+}
+
+.title{
+    font-family: var(--ff-playfair);
+    font-size: 2.25rem;
+    text-align: center;
+    margin-top: 0;
+    line-height: 1.1;
+}
+
+
+
+/* Styles */
+
+body{
+    margin: 0;
+    font-family: var(--ff-roboto);
+    font-size: 1.315rem;
+}
+
+section{
+    padding: 4em 0;
+}
+
+img{
+    max-width: 100%;
+}
+
+.hero{
+    background-color: var(--clr-light);
+    min-height: 660px;
+    align-items: center;
+    
+}
+
+.hero__content{
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero__subtitle{
+    font-size: 1.12rem;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    color: var(--clr-dark);
+    margin: 0 0 .25em;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.hero__title{
+    font-size: 3rem;
+    text-align: center;
+    color: var(--clr-accent);
+    
+}
+
+.first-section__content,
+.second-section__content,
+.third-section__content{
+    flex-direction: column;
+}
+
+
+
+
+.first-section__title{
+    color: var(--clr-accent);
+}
+
+.first-section__text{
+    flex-direction: column;
+}
+
+.second-section{
+    background-color: var(--clr-dark);
+    color: white;
+    
+}
+
+.third-section{
+    background-color: var(--clr-accent);
+    color: white;
+    
+}
+
+.second-section__content,
+.third-section__content{
+    gap: 2rem;
+}
+
+
+
+@media (min-width: 800px) {
+    .hero__title{
+        font-size: 3.75rem;
+    }
+    .first-section__text{
+        flex-direction: row;
+        gap: 5rem;
+        
+    }
+
+    .second-section__content{
+        flex-direction: row;
+        gap: 5rem; 
+    }
+
+    .third-section__content{
+        flex-direction: row-reverse;
+        gap: 5rem;
+    }
+
+    .second-section__title,
+    .third-section__title{
+        text-align: start;
+        margin-top: 0;
+        
+    }
+
+    .col{
+        width: 100%;
+    }
+
+
+}

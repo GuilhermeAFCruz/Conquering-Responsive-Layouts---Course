@@ -1,0 +1,120 @@
+/* 
+////// For this challenge ///////
+
+- All text is in the text.md file
+
+// Requirements
+1. Refer to the design specs for the
+   overall layout 
+2. The image should line up with
+   the sidebar in the section
+   below
+
+*/
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+:root{
+
+    --clr-dark: #23424a;
+    --clr-accent: #136C72;
+    --clr-light: #38CFD9;
+    --clr-purple: #87629A;
+    --clr-gray: #3A3A3A;
+
+    --fw-regular: 400;
+    --fw-bold: 700;
+    --fw-black: 900;
+
+    --fs-big: 3rem;
+    --fs-regular: 1.3rem;
+    --fs-middle: 2.25rem;
+     
+
+  }
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: var(--fs-regular);
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-top: 0;
+}
+
+.container {
+    width: 80%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.row {
+    
+    display: flex;
+    justify-content: space-between;
+    gap: --gap;
+}
+
+.hero {
+    padding: 100px 0;
+    background-color: #23424A;
+    color: #FFF;
+}
+
+.hero__text { 
+    width: 62%;
+}
+
+.hero__img {
+    width: 32%;
+    align-self: flex-start;
+}
+
+.hero p {
+    margin-bottom: 3em;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase; 
+    color: #23424A;
+    font-weight: 900;
+    background-color: #38CFD9;
+    padding: .75em 2em;
+    border-radius: 100px;
+}
+
+.btn:hover,
+.btn:focus {
+    opacity: .75; 
+}
+
+.main{margin-top: 3em;}
+
+
+.primary-content{
+    width: 62%;
+}
+.primary-content h2{
+    color: #136C72;
+    font-weight: var(--fw-black);
+    font-size: var(--fs-middle);
+    
+}
+
+.sidebar {
+    background-color: #136C72;
+    width: 32%;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
